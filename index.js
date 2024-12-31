@@ -2,7 +2,7 @@ const express = require('express')
 const mongoose = require("mongoose");
 const app = express();
 app.use(express.json())
-const router = require("./routes/studentRoute")
+
 const bookrouter = require("./routes/bookRoute");
 const dotenv = require('dotenv')
 dotenv.config();    
