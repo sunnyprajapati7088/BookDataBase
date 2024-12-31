@@ -5,10 +5,7 @@ app.use(express.json())
 const router = require("./routes/studentRoute")
 const bookrouter = require("./routes/bookRoute");
 const dotenv = require('dotenv')
-
 dotenv.config();    
-
-app.use('/students', router);
 app.use("/book", bookrouter);
 const PORT = process.env.PORT
 const MONGODB_URL = process.env.MONGODB_URI;
